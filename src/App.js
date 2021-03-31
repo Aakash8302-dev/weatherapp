@@ -44,7 +44,7 @@ const App = () => {
     }
 
     const getWeather = async () => {
-        const {data}= await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=d4322d02d43674a2ba6921210b9c9e3a`)
+        const {data}= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=d4322d02d43674a2ba6921210b9c9e3a`)
         setWeather({
             description : data.weather[0].description,
             main: {
